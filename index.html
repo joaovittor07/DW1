@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <form action="cadastro.php" method="POST">
+            <fieldset>
+                <legend><b>CADASTRO</b></legend>
+
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required autocomplete="off">
+                    <label for="nome" class="labelInput">Nome Completo</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="email" id="email" class="inputUser" required autocomplete="off">
+                    <label for="email" class="labelInput">Email</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="password" name="senha" id="senha" class="inputUser" required autocomplete="off">
+                    <label for="senha" class="labelInput">Senha</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="tel" name="telefone" id="telefone" class="inputUser" required autocomplete="off">
+                    <label for="telefone" class="labelInput">Telefone</label>
+                </div>
+                <br>
+                <p>Gênero:</p>
+                <input type="radio" id="feminino" name="sexo" value="feminino" required autocomplete="off">
+                <label for="feminino">Feminino</label>
+                <br>
+                <input type="radio" id="masculino" name="sexo" value="masculino" required autocomplete="off">
+                <label for="masculino">Masculino</label>
+                <br><br>
+                <label for="data"><b>Data de Nascimento:</b></label>
+                <input type="date" name="data" id="data" required autocomplete="off">
+                <br><br><br>
+                <div class="inputBox">
+                    <input type="text" name="cidade" id="cidade" class="inputUser" required autocomplete="off">
+                    <label for="cidade" class="labelInput">Cidade</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="estado" id="estado" class="inputUser" required autocomplete="off">
+                    <label for="estado" class="labelInput">Estado</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="endereco" id="endereco" class="inputUser" required autocomplete="off">
+                    <label for="endereco" class="labelInput">Endereço</label>
+                </div>
+                <br><br>
+                <div class="button-container">
+                    <button type="button" id="return" onclick="window.location.href='login.php'">Voltar</button>
+                    <input type="submit" name="submit" id="submit">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
